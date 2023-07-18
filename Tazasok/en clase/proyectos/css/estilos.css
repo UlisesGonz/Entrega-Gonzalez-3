@@ -1,0 +1,265 @@
+/*esto es un comentario en css multilinea
+puedo seguir escribiendo apretando enter
+
+selector{
+propiedad:valor;
+propiedad:valor;
+propiedad:valor;
+
+}
+
+hay 3 selectores principales.
+1: selector de etiqueta (damos estilos a todas las etiquetas de html que cumplen con el nombre del selector)
+2. selector de clase (le damos estilo a aquellas etiquetas que se encuewntrar clasificadas con la clase que estoy usando de selector)
+3. selector id(es unico e irrepetible, podemos poner un id a una sola etiqueta, entonces cuando damos estilos por id solo estamos destinando una unica etiqueta de html)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+p{
+    font-size: 15px;
+}
+
+.sticky{
+   position: sticky ;
+    top: 0;
+    z-index: 10;
+    color: #ffff;
+    background-color: #5d4037;
+}
+  .navegacion .listaItem a{
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    }
+ .listaItem{
+      display: inline;
+   }
+
+ .primerTitulo{
+    background-color: #795548;
+    color: #ffff;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+ }
+ .segundoTitulo{
+    background-color: #FF9800;
+    color: #ffff;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+ }
+ .parrafoIndex{
+   color: #212121;
+   background-color: #bdbdbd;
+   text-align: center;
+   font-weight: 400;
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.2rem;
+   /*background-image: url(../assets/img/tazasok-high-resolution-color-logo.jpeg);        
+   background-position: center; */
+   /*aca estoy practicando*/
+
+ }
+
+ .tituloProducto{
+    color: #ffff;
+    font-size: 2rem;
+    background-color: #FF9800;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+ }
+ .imagenProducto{
+   width: 300px;
+   height: 300px;
+   display: block;
+   margin: auto 40%;
+   /*margin right: 50vh;*/  /*no se como centrar la imagen*/
+ }
+ .productoPrecio{
+    color: #212121;
+    background-color: #bdbdbd;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+ }
+
+ .tituloPie{
+    background-color: #bdbdbd;
+    color: #212121;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 10px;
+ }
+ 
+ .iconoPerfil{
+   width: 50px;
+   height: 50px;
+   display: block;
+   margin: auto 49%;
+ }
+.registro{
+background-color: #FF9800;
+color: #ffff;
+text-align: center;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+
+}
+
+
+ .botonRegistro{
+   background-color: green;
+   color: #ffff;
+   font-size: 1rem;
+   text-align: center;
+   font-weight: 700;
+   font-family: 'Poppins', sans-serif;
+
+ }
+ .empresaFamiliar{                
+   font-size: 1.3rem;
+   font-weight: 400;
+   text-align: center;
+   background-color: #bdbdbd;
+   color: #212121;
+   font-family: 'Poppins', sans-serif;
+ }
+ .empresaFamiliar1{                
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: #bdbdbd;
+  color: #212121;
+  font-family: 'Poppins', sans-serif;
+ }
+ .imagenSomos{
+   display: block;
+   width: 400px;
+   height: 300px;
+   margin: auto 40%;
+ }
+ .navegacionPie{
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   font-size: 1rem;
+   color: #757575;
+ }
+ .navegacionPie .listaItem{
+   display: block;
+ }
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin: 0;
+ 
+}
+ header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #795548;
+  align-items: center;
+  padding: 10px;
+ }
+ .logo{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+ }
+ .nombreEmpresa{
+  margin-left: 50px;
+  color: #ffff; 
+ }
+ .logo img{
+  height: 50px;
+ }
+ header a{
+  text-decoration: none;
+ }
+ footer .navegacionPie{
+  display: flex;
+  align-items: center;
+ }
+ footer .listaItem a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px;
+  color: #212121;
+ }
+.tarjetas{
+  margin: 10px 10px;
+}
+.parrafosPie{
+  margin: 0 10px;
+  display: block;
+}
+.redes{
+  display: flex;
+  margin: 0 10px;
+  align-items: center;
+  text-decoration: none;
+  color: #212121;
+}
+.redes p{
+  padding: 20px;
+  align-items: center;
+  color: #212121;
+  background-color: #bdbdbd;
+}
+.form-registro{
+  width: 400px;
+  background-color: #FF9800;
+  padding: 30px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffff;
+
+}
+.form-registro h4{
+  font-size: 22px;
+  margin-bottom: 20px;
+
+}
+.campos{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: #212121 solid 1px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+.form-registro .boton{
+  width: 100%;
+  border-radius: 5px;
+  color: #ffff;
+  background-color: greenyellow;
+  padding: 12px;
+  margin: 16px 0;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.mensaje{
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: #212121 solid 1px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}

@@ -1,0 +1,106 @@
+body{
+    height: 100vh;
+}
+.sticky{
+    position: sticky !important;
+    top: 0;
+    z-index: 10;
+}
+
+.btn-outline-success{
+    border-color: green;
+    color: black;
+    background-color: #ffff;
+}
+.btn-outline-success:hover{
+    background-color: rgb(121, 177, 36);
+}
+.headerMarron{
+    background-color: #ffc107 !important;
+}
+.nav-link{
+    color: white;
+    font-size: 1.2rem;
+}
+.nav-link:hover, .nav-link:focus{
+    color: #e040fb;
+}
+.form-control{
+    background-color: #ffff;
+    border: 1px solid black;
+    color: black;
+}
+
+.colorFooter{
+    background-color: #ffecb3;
+}
+.text-dark .anclas{
+    text-decoration: none;
+}
+.text-dark a:hover{
+    color: #ffff !important;
+}
+i{
+    font-size: 1.2rem;
+}
+.hPie{
+    color: #e040fb;
+}
+/*para el carrusel del main*/
+.carousel-inner{
+    max-height: 39rem;
+}
+/*para el porsentaje de h1 y h2 del index*/
+@media (max-width:768px) {
+    #intro, #envios {
+        width:90% !important;
+    }
+    .imagenes-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+}
+@media (max-width:576px){
+    .icono.wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+.imagen img{
+    object-fit: cover;
+}
+.mapa{
+    margin: 5 auto;
+    text-align: center;
+    align-items: center;
+}
+.text-contacto{
+    color: black;
+}
+.h1-somos{
+    color: black;
+    width: 50%;
+}
+.color-main{
+    background-color: rgb(247, 202, 4);
+}
+.color-card{
+    background-color: #ffecb3;
+}
+.btn-primary{
+    background-color: green;
+    border-color: green;
+}
+.btn-primary:hover{
+    background-color: greenyellow;
+    border-color: greenyellow;
+}
+.productos{
+    padding:30px 0;
+}
+.navbar-light{
+    color: black !important;
+}
+.bg-light{
+    color: black !important;
+}
