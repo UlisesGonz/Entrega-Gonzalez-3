@@ -1,0 +1,117 @@
+
+
+$color-fondo-busqueda:#ffa000;
+$color-header: #ffc107 !important;
+$h-pie: #e040fb;
+$hover-anclas-pie: #ffff !important;
+$color-nav-header: #ffff !important;
+$color-footer: #ffecb3;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sticky{
+    position: sticky !important;
+    top: 0;
+    z-index: 10;
+}
+
+.btn-outline-success{
+    border-color: black;
+    color: black;
+    background-color: #ffff;
+}
+
+
+.headerMarron{
+    background-color: $color-header;
+    .nav-link{
+        color: $color-nav-header;
+        font-size: 1.2rem;
+    }
+        .nav-link:hover, .nav-link:focus{
+            color: #e040fb !important;
+        }
+}
+
+
+.form-control{
+    background-color: #ffff;
+    border: 1px solid black;
+    color: black;
+}
+
+footer{
+    .anclas{
+        text-decoration: none;
+    }
+        a:hover{
+        color: $hover-anclas-pie;
+        }
+    .hPie{
+        color: $h-pie; 
+    }
+
+}
+.colorFooter{
+    background-color: $color-footer;
+}
+i{
+    font-size: 1.2rem;
+}
+/*para el carrusel del main*/
+.carousel-inner{
+    max-height: 39rem;
+}
+/*para el porcentaje de h1 y h2 del index*/
+@media (max-width:768px) {
+    #intro, #envios {
+        width:90% !important;
+    }
+    .imagenes-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+}
+@media (max-width:576px){
+    .icono.wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+.imagen img{
+    object-fit: cover;
+}
+.mapa{
+    margin: 5 auto;
+    text-align: center;
+    align-items: center;
+}
+.text-contacto{
+    color: black;
+}
+.h1-somos{
+    color: black;
+    width: 50%;
+}
+.color-main{
+    background-color: rgb(247, 202, 4);
+}
+.color-card{
+    background-color: #ffecb3;
+}
+
+.productos{
+    padding:30px 0;
+}
+.boton-busqueda{
+    color: black;
+    border-color: black;
+}
+.boton-busqueda:hover{
+    background-color: $color-fondo-busqueda;
+    border-color: #ffa000;
+}
+/*el pepe*/

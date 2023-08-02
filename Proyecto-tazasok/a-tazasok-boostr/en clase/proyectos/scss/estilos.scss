@@ -1,0 +1,220 @@
+
+
+$color-fondo-busqueda:#ffa000;
+$color-header: #ffc107 !important;
+$h-pie: #e040fb;
+$hover-anclas-pie: #ffff !important;
+$color-nav-header: #ffff !important;
+$color-footer: #ffecb3;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sticky{
+    position: sticky !important;
+    top: 0;
+    z-index: 10;
+}
+
+.btn-outline-success{
+    border-color: black;
+    color: black;
+    background-color: #ffff;
+}
+
+/*esto es el color del header*/
+.headerMarron{
+    background-color: $color-header;
+    .nav-link{
+        color: $color-nav-header;
+        font-size: 1.2rem;
+    }
+        .nav-link:hover, .nav-link:focus{
+            color: #e040fb !important;
+        }
+}
+
+
+/*aca entra la barra de buscar arriba a la derecha*/
+.d-flex{
+    .form-control{
+        background-color: #ffff;
+        border: 1px solid black;
+        color: black;
+    }
+}
+
+footer{
+    .anclas{
+        text-decoration: none;
+    }
+        a:hover{
+        color: $hover-anclas-pie;
+        }
+    .hPie{
+        color: $h-pie; 
+    }
+
+}
+.colorFooter{
+    background-color: $color-footer;
+}
+/*estos son los iconos del footer*/
+i{
+    font-size: 1.2rem;
+}
+/* el carrousel slide por default venia sin el "-" en el medio pero yo se lo puse para que pueda meter el inner dentro de el */ 
+.carousel-slide{
+    .carousel-inner{
+        max-height: 39rem;
+    }
+}
+
+/*para el porcentaje de h1 y h2 del index*/
+@media (max-width:768px) {
+    #intro, #envios {
+        width:90% !important;
+    }
+    .imagenes-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+}
+@media (max-width:576px){
+    .icono.wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+/* aca entran las imagenes de todo el body del index*/
+.container-fluid{
+    .imagen{
+        img{
+            object-fit: cover;
+        }
+    }
+}
+
+/*es el mapa del index*/
+.container-fluid{
+    .mapa{
+        margin: 5 auto;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/*son los dos primeros titulos de la pag contactos*/
+.container-fluid{
+    .text-contacto{
+        color: black;
+    }
+}
+
+/*es el parrafo deltro de quienes somos*/
+.text-center{
+    .h1-somos{
+        color: black;
+        width: 50%;
+    }
+}
+/*es el color delas cartas de contacto y mi cuenta*/
+.color-card{
+    background-color: #ffecb3;
+}
+/*es el padding de los productos de la pag productos*/
+.productos{
+    padding:30px 0;
+}
+
+.boton-busqueda{
+    color: black;
+    border-color: black;
+}
+.boton-busqueda:hover{
+    background-color: $color-fondo-busqueda;
+    border-color: #ffa000;
+}
+
+
+
+
+
+
+
+
+
+/*animaciones para redes sociales*/
+.icons-wrapper{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+  
+}
+
+.icons-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+/* ======================== */
+.icon{
+    display: inline-block; 
+    font-size: 33px;
+    animation: float infinite 5s ease-in-out ; 
+    animation-delay: 1s;
+    
+     
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 5s;
+}
+
+
+.ri-instagram-line{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-delay: 0ms;
+    
+}
+
+.ri-facebook-circle-line{
+    color: #1877f2;
+    animation-delay: 0.5s; /*Adds a animation delay of 0.5 seconds.*/
+}
+
+.ri-whatsapp-line{
+    color: #25d366;
+    animation-delay: 1s; /*Adds a animation delay of 1 seconds.*/
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0); /*The starting point of the animation is 0.*/
+    }
+    50%{
+        transform: translateY(-25px); /*The middle point of the animation is -15xp. This will move the element up.*/
+    }
+    100%{
+        transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
+    }
+}
+
+body{
+    background-image: radial-gradient(circle, #ffa000, #feb033, #fdbf52, #fdce6f, #fddb8c, #fedd8e, #fee08f, #ffe291, #ffda77, #ffd25b, #ffca3c, #ffc107);
+}
